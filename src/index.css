@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(135deg, #007bff, #0047ab);
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.header .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header .links a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.header .links .gar {
+  border: 5px solid greenyellow;
+  color: greenyellow;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.header .links .win {
+  border: 5px solid violet;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: violet;
+}
+.header .async span {
+  color: rgb(192, 103, 192);
+  font-size: 2.5rem;
+}
+
+.header .async p {
+  color: rgb(55, 43, 226);
+  font-size: 2.5rem;
+}
+
+.config {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.config div {
+  display: flex;
+  gap: 5px;
+}
+.config input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.config input:focus {
+  outline: none;
+  border: none;
+}
+.config button {
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+}
+
+.road {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.carslist {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.carslist li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid black;
+  border-top: 0.5px solid black;
+  padding: 5px;
+  background: linear-gradient(to bottom, #222222 40%, #333333);
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.all .race {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.all .race button {
+  color: #000;
+}
+
+li p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.car {
+  font-size: 3.5rem;
+  position: absolute;
+  right: 87%;
+}
+
+.carslist button {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.carslist .select {
+  background-color: rgb(108, 233, 119);
+}
+.carslist .remove {
+  background-color: rgb(209, 63, 63);
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  background: inherit;
+}
+
+.config .start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 2px solid rgb(108, 233, 119);
+  border-radius: 5px;
+  color: rgb(108, 233, 119);
+  background-color: inherit;
+  font-weight: bolder;
+}
+.config .update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 2px solid rgb(218, 132, 218);
+  border-radius: 5px;
+  color: rgb(218, 132, 218);
+  background-color: inherit;
+  font-weight: bolder;
+}
+
+.finish {
+  width: 100px;
+  height: 80px;
+  background-color: #000;
+  background-image: linear-gradient(to bottom, transparent 50%, #fff 50%);
+  background-size: 100% 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 1.5rem;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.active {
+  background-color: rgb(17, 124, 26);
+}
+
+.winner {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
