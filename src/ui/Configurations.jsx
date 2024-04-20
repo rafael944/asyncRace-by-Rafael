@@ -16,6 +16,7 @@ export default function Configurations({
         <button className="start" onClick={handleRace}>
           Race <CiPlay1 />
         </button>
+
         <button className="update" onClick={handleStop}>
           Reset <IoIosRefresh />
         </button>

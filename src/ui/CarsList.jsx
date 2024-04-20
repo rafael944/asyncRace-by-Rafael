@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import Cars from "./Cars";
 import { getCars } from "../services/API";
+import { useState } from "react";
 
 export default function CarsList({
   race,
@@ -9,6 +10,7 @@ export default function CarsList({
   car,
   selectedId,
   setSelectedId,
+  setCars,
 }) {
   return (
     <div className="road">
@@ -21,6 +23,7 @@ export default function CarsList({
             race={race}
             name={val.name}
             car={cars}
+            setCars={setCars}
             individualCarsStopActions={individualCarsStopActions}
             setSelectedId={setSelectedId}
             selectedId={selectedId}

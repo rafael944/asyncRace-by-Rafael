@@ -11,6 +11,8 @@ export default function Cars({
   individualCarsStopActions,
   setSelectedId,
   selectedId,
+  cars,
+  setCars,
 }) {
   const [start, setStart] = useState(false);
   const [speeds, setSpeeds] = useState([]);

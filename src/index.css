@@ -152,9 +152,19 @@ li p {
 
 .carslist .select {
   background-color: rgb(108, 233, 119);
+  transition: 0.5s;
 }
 .carslist .remove {
   background-color: rgb(209, 63, 63);
+  transition: 0.5s;
+}
+
+.carslist .select:hover {
+  background-color: rgb(56, 168, 65);
+}
+
+.carslist .remove:hover {
+  background-color: rgb(179, 43, 43);
 }
 
 .color {
@@ -173,7 +183,13 @@ li p {
   color: rgb(108, 233, 119);
   background-color: inherit;
   font-weight: bolder;
+  transition: 0.5s;
 }
+.config .start:hover {
+  background-color: rgb(108, 233, 119);
+  color: #000;
+}
+
 .config .update {
   display: flex;
   align-items: center;
@@ -184,6 +200,11 @@ li p {
   color: rgb(218, 132, 218);
   background-color: inherit;
   font-weight: bolder;
+  transition: 0.5s;
+}
+.config .update:hover {
+  background-color: rgb(218, 132, 218);
+  color: #000;
 }
 
 .finish {
@@ -208,4 +229,22 @@ li p {
 .winner {
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
 }

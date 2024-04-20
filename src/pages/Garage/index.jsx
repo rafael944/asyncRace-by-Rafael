@@ -34,6 +34,7 @@ export default function Garage({ cars, setCars }) {
         individualCarsStopActions={individualCarsStopActions}
         race={race}
         car={cars}
+        setCars={setCars}
         setSelectedId={setSelectedId}
         selectedId={selectedId}
       />
